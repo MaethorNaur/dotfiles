@@ -1,0 +1,9 @@
+{
+  "ext": {
+    "tmux": {
+      "top_theme": "powerline_terminus",
+      "colorscheme": "gruvbox",
+      "theme": "default"
+    }
+  }
+}
