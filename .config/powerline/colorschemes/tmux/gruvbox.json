@@ -270,6 +270,16 @@
       "fg": "gruvbox:white",
       "bg": "gray0",
       "attrs": []
+    },
+    "exit_fail": {
+      "fg": "gruvbox:lightwhite",
+      "bg": "gruvbox:red",
+      "attrs": []
+    },
+    "exit_success": {
+      "fg": "gruvbox:black",
+      "bg": "gruvbox:green",
+      "attrs": []
     }
   }
 }
