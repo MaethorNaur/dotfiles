@@ -1,5 +1,8 @@
 {
   "ext": {
+    "shell": {
+      "components": "tmux"
+    },
     "tmux": {
       "top_theme": "powerline_terminus",
       "colorscheme": "gruvbox",
