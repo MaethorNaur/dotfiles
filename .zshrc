@@ -41,10 +41,12 @@ antigen bundle encode64
 antigen bundle emoji
 antigen bundle emoji-clock
 antigen bundle catimg
-antigen theme romkatv/powerlevel10k powerlevel10k
+# antigen theme romkatv/powerlevel10k powerlevel10k
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
 antigen bundle robertzk/send.zsh
+# antigen theme petermbenjamin/purity
+antigen theme MaethorNaur/purify-zsh
 antigen apply
 unalias cp
 POWERLEVEL9K_MODE='nerdfont-complete'

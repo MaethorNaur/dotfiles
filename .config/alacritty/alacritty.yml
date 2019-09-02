@@ -49,8 +49,8 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
+  # decorations: none
   decorations: none
-  #decorations: buttonless
 
   # Startup Mode (changes require restart)
   #
@@ -62,7 +62,6 @@ window:
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
   startup_mode: Windowed
-
   # Window title
   #title: Alacritty
 
@@ -88,7 +87,7 @@ scrolling:
   faux_multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
+  auto_scroll: true
 
 # Spaces per Tab (changes require restart)
 #
@@ -173,43 +172,67 @@ font:
 draw_bold_text_with_bright_colors: true
 
 colors:
+  selection:
+    text:       '0xFAFAFA'
+    background: '0x252834'
+
+      # Normal colors
   primary:
-    background: '0x191919'
-    foreground: '0xeaeaea'
-# Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text:   '0xf1c1c1'
-    cursor: '0xff2600'
- # Normal colors
+    background: '0x313440'
+    foreground: '0xFAFAFA'
   normal:
-    black:   '0x000000'
-    red:     '0xd54e53'
-    green:   '0xb9ca4a'
-    yellow:  '0xe6c547'
-    blue:    '0x7aa6da'
-    magenta: '0xc397d8'
-    cyan:    '0x70c0ba'
-    white:   '0xffffff'
- # Bright colors
+    black:   '0x282C34'
+    red:     '0xFF6059'
+    green:   '0x5FFF87'
+    yellow:  '0xFFFF87'
+    blue:    '0x5FAFFF'
+    magenta: '0xAF87FF'
+    cyan:    '0x5FAFFF'
+    white:   '0xFAFAFA'
+
+    # Bright colors
   bright:
-    black:   '0x666666'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0xe7c547'
-    blue:    '0x7aa6da'
-    magenta: '0xb77ee0'
-    cyan:    '0x54ced6'
-    white:   '0xffffff'
-# Dim colors (Optional)
-  dim:
-    black:   '0x333333'
-    red:     '0xf2777a'
-    green:   '0x99cc99'
-    yellow:  '0xffcc66'
-    blue:    '0x6699cc'
-    magenta: '0xcc99cc'
-    cyan:    '0x66cccc'
-    white:   '0xdddddd'
+    black:   '0x282C34'
+    red:     '0xFF6059'
+    green:   '0x5FFF87'
+    yellow:  '0xFFFF87'
+    blue:    '0x5FAFFF'
+    magenta: '0xAF87FF'
+    cyan:    '0x5FAFFF'
+    white:   '0xFAFAFA'
+  # primary:
+    # background: '0x191919'
+    # foreground: '0xeaeaea'
+  # cursor:
+    # text:   '0xf1c1c1'
+    # cursor: '0xff2600'
+  # normal:
+    # black:   '0x000000'
+    # red:     '0xd54e53'
+    # green:   '0xb9ca4a'
+    # yellow:  '0xe6c547'
+    # blue:    '0x7aa6da'
+    # magenta: '0xc397d8'
+    # cyan:    '0x70c0ba'
+    # white:   '0xffffff'
+  # bright:
+    # black:   '0x666666'
+    # red:     '0xff3334'
+    # green:   '0x9ec400'
+    # yellow:  '0xe7c547'
+    # blue:    '0x7aa6da'
+    # magenta: '0xb77ee0'
+    # cyan:    '0x54ced6'
+    # white:   '0xffffff'
+  # dim:
+    # black:   '0x333333'
+    # red:     '0xf2777a'
+    # green:   '0x99cc99'
+    # yellow:  '0xffcc66'
+    # blue:    '0x6699cc'
+    # magenta: '0xcc99cc'
+    # cyan:    '0x66cccc'
+    # white:   '0xdddddd'
 # Colors (Tomorrow Night Bright)
 #colors:
   # Default colors
@@ -318,7 +341,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-  background_opacity: 1.0
+  background_opacity: 0.0
 
 # Mouse bindings
 #

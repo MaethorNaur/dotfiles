@@ -16,7 +16,7 @@ echo "Setting ZSH"
 
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
-
+curl -L git.io/antigen > ~/antigen.zsh
 echo "Detecting rust"
 if ! [ -x $(command -v rustup) ]; then
   echo "Installing brew"
@@ -36,6 +36,7 @@ cargo install lipo
 ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
 
 cp -rvf .cargo ~/
+
 wget -O /usr/local/bin/imgcat https://iterm2.com/utilities/imgcat
 sudo chmod a+x /usr/local/bin/imgcat
 pip3 install powerline-status
@@ -49,5 +50,3 @@ yarn global add dockerfile-language-server-nodejs markdownlint-cli remark remark
 
 cp .zprofile .zshrc .purepower .tmux.conf ~/
 cp -rvf .config/* ~/.config/
-
-/usr/local/opt/gnu-sed/libexec/gnubin/sed

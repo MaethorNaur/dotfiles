@@ -1,5 +1,5 @@
 [options]
-  colorscheme = "spacegray"
+  colorscheme = "purify"
   background = "dark"
   enable_guicolors = true
   guifont = "FuraCode Nerd Font:h14"
@@ -21,8 +21,8 @@
   name = "sodapopcan/vim-twiggy"
   merged = 0
 [[custom_plugins]]
-  name = "ajh17/Spacegray.vim"
-  merge = 0
+  name = "MaethorNaur/purify-vim"
+    merged = 0
 [[custom_plugins]]
   name = "kristijanhusak/vim-carbon-now-sh"
   merge = 0

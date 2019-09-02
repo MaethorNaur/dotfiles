@@ -6,6 +6,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wget -O /usr/local/bin/imgcat https://iterm2.com/utilities/imgcat
 _ chmod a+x /usr/local/bin/imgcat
 pip3 install powerline-status
+curl https://raw.githubusercontent.com/kyoz/purify/master/zsh/purify.zsh-theme --ouput $ZSH/themes/purify.zsh-theme
 ```
 
 ```bash

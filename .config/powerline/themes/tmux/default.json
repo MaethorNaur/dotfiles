@@ -1,6 +1,10 @@
 {
   "segments": {
-    "left": [{ "function": "powerline.segments.common.bat.battery" }],
+    "left": [
+      {
+        "function": "powerline.segments.common.bat.battery"
+      }
+    ],
     "right": [
       {
         "function": "powerline.segments.common.vcs.branch",
@@ -11,7 +15,6 @@
       {
         "function": "powerline.segments.common.vcs.stash"
       },
-
       {
         "function": "powerline.segments.shell.cwd",
         "args": {
