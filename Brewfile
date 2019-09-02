@@ -1,4 +1,5 @@
 tap "homebrew/cask"
+tap "browsh-org/homebrew-browsh"
 cask "alacritty"
 brew "python"
 brew "vim"

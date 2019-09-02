@@ -25,7 +25,6 @@ antigen bundle go
 antigen bundle golang
 antigen bundle osx
 antigen bundle node
-antigen bundle aws
 antigen bundle terraform
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle colorize
@@ -45,6 +44,7 @@ antigen bundle catimg
 antigen theme romkatv/powerlevel10k powerlevel10k
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
+antigen bundle robertzk/send.zsh
 antigen apply
 unalias cp
 POWERLEVEL9K_MODE='nerdfont-complete'
