@@ -48,5 +48,4 @@ eval "$(hub alias -s)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-export POWERLINE_CONFIG_COMMAND="/usr/local/bin/powerline-config"
 . /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh

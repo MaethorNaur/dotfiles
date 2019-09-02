@@ -4,7 +4,7 @@ export PAGER=/usr/local/bin/bat
 export EDITOR=/usr/local/bin/vim
 
 if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
-      FPATH=/usr/local/share/zsh/site-functions:$FPATH
+      export FPATH=/usr/local/share/zsh/site-functions:$FPATH
 fi
 
 export POWERLINE_CONFIG_COMMAND="/usr/local/bin/powerline-config"
