@@ -1,14 +1,6 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-# Path to your oh-my-zsh installation.
-export ZSH_TMUX_AUTOSTART=true
-export ZSH_TMUX_AUTOQUIT=true
-export GITHUB_USER="%GIT_USER%"
-export GITHUB_PASSWORD="%GIT_PASSWORD%"
+. ~/.zsh/github.zsh
+. ~/.zsh/env.zsh
 source $HOME/antigen.zsh
-if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
-      FPATH=/usr/local/share/zsh/site-functions:$FPATH
-fi
 
 antigen use oh-my-zsh
 antigen bundle tmux
@@ -41,42 +33,18 @@ antigen bundle encode64
 antigen bundle emoji
 antigen bundle emoji-clock
 antigen bundle catimg
-# antigen theme romkatv/powerlevel10k powerlevel10k
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
 antigen bundle robertzk/send.zsh
-# antigen theme petermbenjamin/purity
-antigen theme MaethorNaur/purify-zsh
+antigen theme kyoz/purify zsh/purify
 antigen apply
 unalias cp
-POWERLEVEL9K_MODE='nerdfont-complete'
-[[ $TERM == xterm* ]] || : ${PURE_POWER_MODE:=portable}
-PURE_POWER_USE_P10K_EXTENSIONS=-1
-source ~/.purepower
 setopt correct
-
-export GOPATH=$HOME/go
-export PATH="$PATH:$HOME/Documents/gatling/bin"
-export JAVA_HOME="$(/usr/libexec/java_home -v 10)"
+jvm use 1.8
 
 alias ls='exa'
-export EDITOR=/usr/local/bin/vim
-export PAGER=/usr/local/bin/bat
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
-export PATH="$HOME/go/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="/usr/local/flutter/bin:$PATH"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-export GITHUB_TOKEN="%GIT_PASSWORD%"
-export FZF_CTRL_T_OPTS="--preview 'bat --color always {}'"
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 eval "$(hub alias -s)"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 export POWERLINE_CONFIG_COMMAND="/usr/local/bin/powerline-config"
