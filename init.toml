@@ -36,14 +36,8 @@
   name = "luochen1990/rainbow"
   merge = 0
 [[custom_plugins]]
-  name = "liquidz/lein-vim"
-  merge = 0
-[[custom_plugins]]
   name = "ryanoasis/vim-devicons"
   merge = 0
-[[custom_plugins]]
-  name = "mhartington/oceanic-next"
-  merged = 0
 [[custom_plugins]]
   name = "christianrondeau/vim-base64"
   merge = 0

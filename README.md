@@ -28,5 +28,5 @@ yarn global add dockerfile-language-server-nodejs bash-language-server markdownl
 ```
 
 ```
-:CocInstall coc-rls coc-json coc-yaml coc-emmet coc-neosnippet coc-java coc-gocode coc-css coc-word coc-html
+:CocInstall coc-rls coc-json coc-yaml coc-emmet coc-neosnippet coc-java coc-gocode coc-css coc-word coc-html coc-vimlsp coc-git coc-github
 ```
