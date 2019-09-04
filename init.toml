@@ -15,6 +15,9 @@
   filetree_direction = "right"
   enable_cursorcolumn = true
 [[custom_plugins]]
+  name = "shumphrey/fugitive-gitlab.vim"
+  merged = 0
+[[custom_plugins]]
   name = "thosakwe/vim-flutter"
   merged = 0
 [[custom_plugins]]
@@ -146,7 +149,5 @@
   name = "incsearch"
 [[layers]]
   name = "indentmove"
-[[layers]]
-  name = "tags"
 [[layers]]
   name = "exprfold"

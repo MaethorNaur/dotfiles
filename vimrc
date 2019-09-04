@@ -61,4 +61,5 @@ nnoremap <leader>fR :FlutterHotRestart<cr>
 nnoremap <leader>fD :FlutterVisualDebug<cr>
 let g:github_dashboard = { 'username': $GITHUB_USER, 'password': $GITHUB_TOKEN }
 let g:github_access_token = $GITHUB_TOKEN
+let g:gitlab_api_keys = {'gitlab.com': $GITLAB_TOKEN}
 " vim:set et sw=2
