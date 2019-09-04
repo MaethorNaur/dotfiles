@@ -11,12 +11,11 @@ if 1
     execute 'source' fnamemodify(expand('<sfile>'), ':h').'/config/main.vim'
 endif
 let g:rainbow_active = 1
-let g:mix_format_on_save = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_elixir_checker = 1
