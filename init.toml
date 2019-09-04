@@ -132,13 +132,10 @@
   filetypes = [
     "rust",
     "dart",
-    "elixir",
     "scala",
     "go",
     "dockerfile"
   ]
-  [layers.override_cmd]
-   elixir = ["/Users/pedromangabeira/.vscode/extensions/jakebecker.elixir-ls-0.2.25/elixir-ls-release/language_server.sh"]
 [[layers]]
   name = "lang#go"
 [[layers]]
@@ -151,6 +148,5 @@
   name = "indentmove"
 [[layers]]
   name = "tags"
-  enable = false
 [[layers]]
   name = "exprfold"
