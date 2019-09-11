@@ -1,6 +1,6 @@
 {
   "rust-client.channel": "stable",
-  "coc.preferences.formatOnSaveFiletypes": ["rust"],
+  "coc.preferences.formatOnSaveFiletypes": ["rust", "yaml", "json"],
   "rust.clippy_preference": "on",
   "rust.all_targets": false,
   "rust.show_warnings": true,

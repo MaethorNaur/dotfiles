@@ -151,3 +151,6 @@
   name = "indentmove"
 [[layers]]
   name = "exprfold"
+[[layers]]
+  name = "checkers"
+  enable = false
