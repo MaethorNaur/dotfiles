@@ -10,7 +10,7 @@
   enable_statusline_display_mode = false
   bootstrap_before = "myspacevim#before"
   lint_on_the_fly = true
-  filemanager = "nerdtree"
+  filemanager = "defx"
   autocomplete_method = "coc"
   filetree_direction = "right"
   enable_cursorcolumn = true
