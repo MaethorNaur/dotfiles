@@ -58,4 +58,17 @@ nnoremap <leader>fD :FlutterVisualDebug<cr>
 let g:github_dashboard = { 'username': $GITHUB_USER, 'password': $GITHUB_TOKEN }
 let g:github_access_token = $GITHUB_TOKEN
 let g:gitlab_api_keys = {'gitlab.com': $GITLAB_TOKEN}
+" Show all diagnostics
+nnoremap <silent> <space>lca  :<C-u>CocList diagnostics<cr>
+" Find symbol of current document
+nnoremap <silent> <space>lco  :<C-u>CocList outline<cr>
+" Search workspace symbols
+nnoremap <silent> <space>lcs  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent> <space>lcj  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent> <space>lck  :<C-u>CocPrev<CR>
+" Resume latest coc list
+nnoremap <silent> <space>lcp  :<C-u>CocListResume<CR>
+
 " lua require('spacevim').bootstrap()
