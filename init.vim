@@ -59,7 +59,7 @@ let g:github_dashboard = { 'username': $GITHUB_USER, 'password': $GITHUB_TOKEN }
 let g:github_access_token = $GITHUB_TOKEN
 let g:gitlab_api_keys = {'gitlab.com': $GITLAB_TOKEN}
 " Show all diagnostics
-nnoremap <silent> <space>lca  :<C-u>CocList diagnostics<cr>
+" nnoremap <silent> <space>lca  :<C-u>CocList diagnostics<cr>
 " Find symbol of current document
 nnoremap <silent> <space>lco  :<C-u>CocList outline<cr>
 " Search workspace symbols
