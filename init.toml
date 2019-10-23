@@ -15,6 +15,9 @@
   filetree_direction = "right"
   enable_cursorcolumn = true
 [[custom_plugins]]
+  name = "gleam-lang/gleam.vim"
+  merge = 0
+[[custom_plugins]]
   name = "neoclide/vim-node-rpc"
   merge = 0
 [[custom_plugins]]
