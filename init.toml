@@ -1,5 +1,6 @@
 [options]
-  colorscheme = "purify"
+  colorscheme = "srcery"
+  # colorscheme = "purify"
   background = "dark"
   enable_guicolors = true
   guifont = "FuraCode Nerd Font:h14"
