@@ -41,7 +41,7 @@
   name = "kristijanhusak/vim-carbon-now-sh"
   merge = 0
 [[custom_plugins]]
-name = "suoto/vim-antlr"
+ name = "suoto/vim-antlr"
  merged = 0
 [[custom_plugins]]
  name = "venantius/vim-cljfmt"
