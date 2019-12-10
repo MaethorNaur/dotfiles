@@ -15,6 +15,7 @@
   autocomplete_method = "coc"
   filetree_direction = "right"
   enable_cursorcolumn = true
+  windows_smartclose = "§"
 [[custom_plugins]]
   name = "gleam-lang/gleam.vim"
   merge = 0
@@ -95,7 +96,7 @@ name = "suoto/vim-antlr"
 [[layers]]
   name = "debug"
 [[layers]]
-  name = "leaderf"
+  name = "denite"
 [[layers]]
   name = "autocomplete"
   auto-completion-return-key-behavior = "complete"
@@ -113,6 +114,7 @@ name = "suoto/vim-antlr"
   name = "github"
 [[layers]]
   name = "git"
+  git-plugin = "fugitive"
 [[layers]]
   name = "shell"
   default_position = "bottom"
