@@ -51,6 +51,9 @@ brew "wget"
 brew "mdp"
 brew "Rigellute/tap/spotify-tui"
 brew "portaudio"
+brew "diff-so-fancy"
+brew "emojify"
+brew "portaudio"
 mas "Enpass", id: 732710998
 mas "Spark", id: 1176895641
 mas "Slack", id: 803453959
