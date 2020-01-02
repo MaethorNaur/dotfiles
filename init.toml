@@ -1,8 +1,7 @@
 [options]
   colorscheme = "srcery"
-  # colorscheme = "purify"
   background = "dark"
-  enable_guicolors = true
+  enable_guicolors = false
   guifont = "FuraCode Nerd Font:h14"
   statusline_separator = "slant"
   statusline_inactive_separator = "bar"
