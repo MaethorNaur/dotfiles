@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 cask "alacritty"
 tap "wtfutil/wtfutil"
+brew "ripgrep"
 brew "wtfutil"
 brew "fortune"
 brew "bitwise"
