@@ -36,6 +36,8 @@ antigen bundle catimg
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
 antigen bundle robertzk/send.zsh
+antigen bundle b4b4r07/zsh-vimode-visual
+antigen bundle Nyquase/vi-mode
 antigen theme denysdovhan/spaceship-prompt
 antigen apply
 unalias cp

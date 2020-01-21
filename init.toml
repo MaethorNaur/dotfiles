@@ -2,7 +2,7 @@
   colorscheme = "srcery"
   background = "dark"
   enable_guicolors = true
-  guifont = "FuraCode Nerd Font:h14"
+  guifont = "Monoid Nerd Font:h12"
   statusline_separator = "slant"
   statusline_inactive_separator = "bar"
   buffer_index_type = 4
