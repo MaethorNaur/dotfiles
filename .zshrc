@@ -36,8 +36,7 @@ antigen bundle catimg
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
 antigen bundle robertzk/send.zsh
-# antigen theme kyoz/purify zsh/purify
-antigen theme petermbenjamin/purity purity
+antigen theme denysdovhan/spaceship-prompt
 antigen apply
 unalias cp
 setopt correct
