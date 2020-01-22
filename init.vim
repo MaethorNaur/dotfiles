@@ -39,8 +39,6 @@ let g:neoformat_java_googlefmt = {
         \ 'args': ['-jar', get(g:,'spacevim_layer_lang_java_formatter', ''), '-'],
         \ 'stdin': 1,
 \ }
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 vnoremap <F5> :CarbonNowSh<CR>
 nnoremap <Space>gl :Twiggy<CR>
 let g:carbon_now_sh_options =

@@ -3,14 +3,14 @@
 source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
+antigen bundle b4b4r07/zsh-vimode-visual
+antigen bundle Nyquase/vi-mode
 antigen bundle tmux
 antigen bundle git
 antigen bundle command-not-found
 antigen bundle common-aliases # Common aliases like ll and la
 antigen bundle djui/alias-tips
-antigen bundle arialdomartini/oh-my-git
 antigen bundle docker
-antigen bundle docker-machine
 antigen bundle docker-compose
 antigen bundle npm
 antigen bundle go
@@ -25,7 +25,6 @@ antigen bundle mix
 antigen bundle aws
 antigen bundle cargo
 antigen bundle rust
-antigen bundle themes
 antigen bundle lein
 antigen bundle lol
 antigen bundle history
@@ -36,9 +35,7 @@ antigen bundle catimg
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
 antigen bundle robertzk/send.zsh
-antigen bundle b4b4r07/zsh-vimode-visual
-antigen bundle Nyquase/vi-mode
-antigen theme denysdovhan/spaceship-prompt
+antigen theme MaethorNaur/spaceship-prompt
 antigen apply
 unalias cp
 setopt correct
