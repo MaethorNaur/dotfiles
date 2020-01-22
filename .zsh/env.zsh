@@ -1,8 +1,8 @@
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOQUIT=true
 export PAGER=/usr/local/bin/bat
-export EDITOR=/usr/local/bin/vim
-export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
+export EDITOR=/usr/local/bin/nvim
+export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist noma' -\""
 
 if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
       export FPATH=/usr/local/share/zsh/site-functions:$FPATH
