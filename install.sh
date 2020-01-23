@@ -30,7 +30,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analysis rust-src clippy rustfmt
 
 rustup target add x86_64-pc-windows-msvc x86_64-unknown-linux-musl aarch64-apple-ios x86_64-apple-ios
-
+cargo install toml-fmt
 cargo install lipo
 
 ln -s /usr/local/bin/x86_64-linux-musl-gcc /usr/local/bin/musl-gcc
