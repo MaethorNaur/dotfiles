@@ -6,9 +6,3 @@ disabled = true
 
 [git_commit]
 disabled = false
-
-[rust]
-disabled = true
-
-[java]
-disabled = true
