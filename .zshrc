@@ -72,5 +72,5 @@ eval "$(hub alias -s)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-. /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# . /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 eval "$(starship init zsh)"

@@ -101,7 +101,7 @@ tabspaces: 8
 font:
   size: 12.0
   normal:
-    family: Monoid Nerd Font 
+    family: Monoid Nerd Font
   offset:
     x: 0
     y: 0
@@ -167,7 +167,7 @@ colors:
     # magenta: '0xAF87FF'
     # cyan:    '0x5FAFFF'
     # white:   '0xFAFAFA'
-
+#
 # Colors (Tomorrow Night Bright)
 #colors:
   # Default colors
@@ -614,7 +614,8 @@ key_bindings:
   - { key: F11,      mods: Command, chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Command, chars: "\x1b[24;3~"                  }
   - { key: D,        mods: Command,       chars: "\x06\x76" } 
-  - { key: D,        mods: Command|Shift, chars: "\x06\x73" }
+  - { key: S,        mods: Command|Shift, chars: "\x06\x73" }
+  - { key: D,        mods: Command|Shift, chars: "\x06\x53" }
   - { key: W,        mods: Command,       chars: "\x06\x78" }
   - { key: H,        mods: Command,       chars: "\x06\x68" }
   - { key: J,        mods: Command,       chars: "\x06\x6a" }
