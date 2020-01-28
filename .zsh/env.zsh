@@ -1,5 +1,7 @@
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOQUIT=true
+export ZSH_TMUX_UNICODE=true
+
 export PAGER=/usr/local/bin/bat
 export EDITOR=/usr/local/bin/nvim
 export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist noma' -\""
