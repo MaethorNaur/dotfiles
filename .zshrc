@@ -35,7 +35,7 @@ antigen bundle catimg
 antigen bundle hschne/fzf-git
 antigen bundle mgryszko/jvm
 antigen bundle robertzk/send.zsh
-# antigen bundle MaethorNaur/spaceship-prompt
+antigen bundle MikeDacre/tmux-zsh-vim-titles
 antigen apply
 unalias cp
 setopt correct
@@ -72,5 +72,4 @@ eval "$(hub alias -s)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-# . /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 eval "$(starship init zsh)"
