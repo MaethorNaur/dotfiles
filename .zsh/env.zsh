@@ -30,3 +30,4 @@ export FZF_TMUX=1
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+export INSERT_MODE_INDICATOR="%{$FX[bold]$FG[001]%}INSERT%{$FX[reset]%}"
