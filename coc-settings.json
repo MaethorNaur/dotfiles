@@ -6,7 +6,7 @@
   "rust.show_warnings": true,
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.errors.incompleteClasspath.severity": "info",
-  "java.trace.server": "verbose",
+  "codeLens.enable": true,
   "languageserver": {
     "dart": {
       "command": "dart_language_server",
@@ -19,11 +19,6 @@
           "completion": {}
         }
       }
-    },
-    "metals": {
-      "command": "metals-vim",
-      "rootPatterns": ["build.sbt"],
-      "filetypes": ["scala", "sbt"]
     },
     "golang": {
       "command": "gopls",
