@@ -188,6 +188,9 @@ filetypes = [
     'dockerfile',
 ]
 
+[layers.override_cmd]
+elixir = ['~/.elixir-ls/release/language_server.sh']
+
 [[layers]]
 name = 'lang#go'
 
