@@ -214,8 +214,8 @@ name = 'checkers'
 enable = false
 
 [options]
-colorscheme = 'srcery'
-background = 'dark'
+colorscheme = 'nord'
+colorscheme_bg = 'dark'
 enable_guicolors = true
 guifont = 'Monoid Nerd Font:h12'
 statusline_separator = 'slant'
