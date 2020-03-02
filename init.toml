@@ -216,7 +216,7 @@ enable = false
 [options]
 colorscheme = 'nord'
 colorscheme_bg = 'dark'
-enable_guicolors = true
+enable_guicolors = false
 guifont = 'Monoid Nerd Font:h12'
 statusline_separator = 'slant'
 statusline_inactive_separator = 'bar'
