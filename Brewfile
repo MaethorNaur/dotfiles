@@ -56,6 +56,7 @@ brew "diff-so-fancy"
 brew "emojify"
 brew "portaudio"
 brew "starship"
+brew "procs"
 mas "Enpass", id: 732710998
 mas "Spark", id: 1176895641
 mas "Slack", id: 803453959

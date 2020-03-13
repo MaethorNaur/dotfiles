@@ -73,3 +73,4 @@ eval "$(hub alias -s)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 eval "$(starship init zsh)"
+alias grep="rg"
