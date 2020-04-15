@@ -31,10 +31,6 @@ name = 'sodapopcan/vim-twiggy'
 merged = 0
 
 [[custom_plugins]]
-name = 'MaethorNaur/purify-vim'
-merged = 0
-
-[[custom_plugins]]
 name = 'kristijanhusak/vim-carbon-now-sh'
 merge = 0
 
@@ -221,7 +217,7 @@ enable = false
 colorscheme = 'nord'
 colorscheme_bg = 'dark'
 enable_guicolors = false
-guifont = 'Monoid Nerd Font:h12'
+guifont = 'Iosevka Nerd Font:h14'
 statusline_separator = 'slant'
 statusline_inactive_separator = 'bar'
 buffer_index_type = 4

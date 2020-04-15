@@ -98,9 +98,9 @@ scrolling:
 
 # Font configuration (changes require restart)
 font:
-  size: 12.0
+  size: 14.0
   normal:
-    family: Monoid Nerd Font
+    family: Iosevka Nerd Font
   offset:
     x: 0
     y: 0
