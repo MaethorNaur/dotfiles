@@ -230,3 +230,17 @@ autocomplete_method = 'coc'
 filetree_direction = 'right'
 enable_cursorcolumn = true
 windows_smartclose = '§'
+tatusline_left_sections = [
+    'winnr',
+    'major mode',
+    'filename',
+    'version control info',
+    'search status',
+]
+statusline_right_sections = [
+    'minor mode lighters',
+    'syntax checking',
+    'cursorpos',
+    'percentage',
+    'fileformat',
+]
