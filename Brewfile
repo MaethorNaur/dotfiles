@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 cask "alacritty"
 tap "wtfutil/wtfutil"
+brew "git-absorb"
 brew "urlview"
 brew "ripgrep"
 brew "wtfutil"
