@@ -75,15 +75,18 @@ let g:airline#extensions#bookmark#enabled = 0
 
 call SpaceVim#layers#disable('core#statusline')
 call SpaceVim#layers#disable('core#tabline')
-nmap <leader>1 :bfirst<CR>
-nmap <leader>2 :bfirst<CR>:bn<CR>
-nmap <leader>3 :bfirst<CR>:2bn<CR>
-nmap <leader>4 :bfirst<CR>:3bn<CR>
-nmap <leader>5 :bfirst<CR>:4bn<CR>
-nmap <leader>6 :bfirst<CR>:5bn<CR>
-nmap <leader>7 :bfirst<CR>:6bn<CR>
-nmap <leader>8 :bfirst<CR>:7bn<CR>
-nmap <leader>9 :bfirst<CR>:8bn<CR>
+
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
+nmap <leader>- <Plug>AirlineSelectPrevTab
+nmap <leader>+ <Plug>AirlineSelectNextTab
 
 nnoremap <silent> <space>bd :bd<CR>
 
