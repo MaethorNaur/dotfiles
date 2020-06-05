@@ -69,4 +69,26 @@ nnoremap <silent> <space>lck  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>lcp  :<C-u>CocListResume<CR>
 
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#bookmark#enabled = 0
+
+call SpaceVim#layers#disable('core#statusline')
+call SpaceVim#layers#disable('core#tabline')
+nmap <leader>1 :bfirst<CR>
+nmap <leader>2 :bfirst<CR>:bn<CR>
+nmap <leader>3 :bfirst<CR>:2bn<CR>
+nmap <leader>4 :bfirst<CR>:3bn<CR>
+nmap <leader>5 :bfirst<CR>:4bn<CR>
+nmap <leader>6 :bfirst<CR>:5bn<CR>
+nmap <leader>7 :bfirst<CR>:6bn<CR>
+nmap <leader>8 :bfirst<CR>:7bn<CR>
+nmap <leader>9 :bfirst<CR>:8bn<CR>
+
+nnoremap <silent> <space>bd :bdelete<CR>
+
+
 " lua require('spacevim').bootstrap()
