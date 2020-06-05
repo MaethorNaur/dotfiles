@@ -13,7 +13,6 @@ antigen bundle djui/alias-tips
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle npm
-antigen bundle go
 antigen bundle golang
 antigen bundle osx
 antigen bundle node
