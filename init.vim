@@ -8,9 +8,7 @@
 
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/config/main.vim'
 let g:rainbow_active = 1
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -25,7 +23,6 @@ let g:syntastic_markdown_mdl_exec = 'markdownlint'
 let g:syntastic_java_checkers=['javac']
 let g:syntastic_java_javac_config_file_enabled = 1
 let g:syntastic_go_checkers = ['golangci_lint']
-let g:syntastic_scala_checkers=['ensime']
 let g:syntastic_markdown_mdl_args = '-c ~/.config/efm-langserver/markdownlint.yml'
 let g:vebugger_path_gdb='rust-gdb'
 let g:vebugger_path_python_lldb='rust-lldb'
@@ -69,7 +66,6 @@ nnoremap <silent> <space>lck  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>lcp  :<C-u>CocListResume<CR>
 
-let g:airline_section_c = '%t'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'

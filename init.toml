@@ -1,4 +1,8 @@
 [[custom_plugins]]
+name = 'bling/vim-bufferline'
+merged = 0
+
+[[custom_plugins]]
 name = 'vim-airline/vim-airline'
 merged = 0
 
