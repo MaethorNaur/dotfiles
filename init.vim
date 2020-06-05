@@ -69,9 +69,10 @@ nnoremap <silent> <space>lck  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>lcp  :<C-u>CocListResume<CR>
 
+let g:airline_section_c = '%t'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#bookmark#enabled = 0
