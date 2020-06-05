@@ -88,7 +88,7 @@ nmap <leader>7 :bfirst<CR>:6bn<CR>
 nmap <leader>8 :bfirst<CR>:7bn<CR>
 nmap <leader>9 :bfirst<CR>:8bn<CR>
 
-nnoremap <silent> <space>bd :bdelete<CR>
+nnoremap <silent> <space>bd :bd<CR>
 
 
 " lua require('spacevim').bootstrap()
