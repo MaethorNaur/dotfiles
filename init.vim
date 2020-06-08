@@ -90,7 +90,7 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
 
-nnoremap <silent> <space>bd :bd<CR>
+nnoremap <silent> <space>bd :Bdelete<CR>
 
 
 " lua require('spacevim').bootstrap()
