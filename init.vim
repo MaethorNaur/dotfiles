@@ -67,6 +67,7 @@ nnoremap <silent> <space>lck  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>lcp  :<C-u>CocListResume<CR>
 
 let g:airline_section_c = '%t'
+let g:airline#extensions#tmuxline#enabled = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
