@@ -1,4 +1,8 @@
 [[custom_plugins]]
+name = 'moll/vim-bbye'
+merged = 0
+
+[[custom_plugins]]
 name = 'vim-airline/vim-airline'
 merged = 0
 
