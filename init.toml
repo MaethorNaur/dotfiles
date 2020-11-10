@@ -222,10 +222,10 @@ name = 'checkers'
 enable = false
 
 [options]
-colorscheme = 'nord'
-colorscheme_bg = 'dark'
+colorscheme = 'gruvbox'
+colorscheme_bg = 'light'
 enable_guicolors = false
-guifont = 'Iosevka Nerd Font:h14'
+guifont = 'FuraCode Nerd Font:h14'
 statusline_separator = 'slant'
 statusline_inactive_separator = 'bar'
 buffer_index_type = 4
