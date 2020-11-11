@@ -10,8 +10,6 @@ if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
       export FPATH=/usr/local/share/zsh/site-functions:$FPATH
 fi
 
-export POWERLINE_CONFIG_COMMAND="/usr/local/bin/powerline-config"
-
 
 export GOPATH=$HOME/go
 
@@ -25,6 +23,10 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/flutter/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
+export BAT_THEME="gruvbox-light"
+export FZF_DEFAULT_COMMAND="$RG_PREFIX"
 
 export FZF_CTRL_T_OPTS="--preview 'bat --color always {}'"
 export FZF_TMUX=1
