@@ -1,42 +1,82 @@
 {
-  "rust-client.channel": "stable",
-  "coc.preferences.formatOnSaveFiletypes": ["rust", "yaml", "json"],
-  "rust.clippy_preference": "on",
-  "rust.all_targets": false,
-  "rust.show_warnings": true,
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "rust",
+    "dart",
+    "scala",
+    "js"
+  ],
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.errors.incompleteClasspath.severity": "info",
+  "metals.serverVersion": "0.10.0",
+  "metals.statusBarEnabled": true,
+  "metals.superMethodLensesEnabled": true,
+  "metals.showInferredType": true,
+  "metals.showImplicitArguments": true,
   "codeLens.enable": true,
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+  "elixir.trace.server": "verbose",
   "languageserver": {
     "dart": {
-      "command": "dart_language_server",
-      "args": [],
+      "command": "dart",
+      "args": [
+        "/usr/local/opt/dart/libexec/bin/snapshots/analysis_server.dart.snapshot",
+        "--lsp",
+        "--client-id",
+        "vim",
+        "--client-version",
+        "coc.nvim"
+      ],
       "filetypes": ["dart"],
-      "initializationOptions": {},
-      "settings": {
-        "dart": {
-          "validation": {},
-          "completion": {}
-        }
-      }
+      "initializationOptions": {
+        "closingLabels": true,
+        "suggestFromUnimportedLibraries": true
+      },
+      "progressOnInitialization": true
     },
     "golang": {
       "command": "gopls",
       "args": [],
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"]
+      "initializationOptions": {
+        "usePlaceholders": true
+      },
+      "rootPatterns": [
+        "go.mod",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "filetypes": [
+        "go"
+      ]
     },
     "bash": {
       "command": "bash-language-server",
-      "args": ["start"],
-      "filetypes": ["sh"],
-      "ignoredRootPaths": ["~"]
+      "args": [
+        "start"
+      ],
+      "filetypes": [
+        "sh"
+      ],
+      "ignoredRootPaths": [
+        "~"
+      ]
     },
     "dockerfile": {
       "command": "docker-langserver",
-      "filetypes": ["dockerfile"],
-      "args": ["--stdio"]
+      "filetypes": [
+        "dockerfile"
+      ],
+      "args": [
+        "--stdio"
+      ]
+    },
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": [
+        "terraform"
+      ],
+      "initializationOptions": {}
     }
   }
 }
