@@ -3,15 +3,15 @@ name = 'moll/vim-bbye'
 merged = 0
 
 [[custom_plugins]]
+name = 'chriskempson/base16-vim'
+merged = 0
+
+[[custom_plugins]]
 name = 'vim-airline/vim-airline'
 merged = 0
 
 [[custom_plugins]]
-name = 'morhetz/gruvbox'
-merged = 0
-
-[[custom_plugins]]
-name = 'MikeDacre/tmux-zsh-vim-titles'
+name = 'vim-airline/vim-airline-themes'
 merged = 0
 
 [[custom_plugins]]
@@ -19,28 +19,8 @@ name = 'gleam-lang/gleam.vim'
 merge = 0
 
 [[custom_plugins]]
-name = 'neoclide/vim-node-rpc'
-merge = 0
-
-[[custom_plugins]]
-name = 'roxma/vim-hug-neovim-rpc'
-merge = 0
-
-[[custom_plugins]]
-name = 'shumphrey/fugitive-gitlab.vim'
+name = 'elixir-editors/vim-elixir'
 merged = 0
-
-[[custom_plugins]]
-name = 'thosakwe/vim-flutter'
-merged = 0
-
-[[custom_plugins]]
-name = 'sodapopcan/vim-twiggy'
-merged = 0
-
-[[custom_plugins]]
-name = 'kristijanhusak/vim-carbon-now-sh'
-merge = 0
 
 [[custom_plugins]]
 name = 'suoto/vim-antlr'
@@ -55,6 +35,26 @@ name = 'tpope/vim-cucumber'
 merged = 0
 
 [[custom_plugins]]
+name = 'lepture/vim-jinja'
+merged = 0
+
+[[custom_plugins]]
+name = 'shumphrey/fugitive-gitlab.vim'
+merged = 0
+
+[[custom_plugins]]
+name = 'sodapopcan/vim-twiggy'
+merged = 0
+
+[[custom_plugins]]
+name = 'toml-lang/toml'
+merged = 0
+
+[[custom_plugins]]
+name = 'kristijanhusak/vim-carbon-now-sh'
+merge = 0
+
+[[custom_plugins]]
 name = 'vim-scripts/dbext.vim'
 merged = 0
 
@@ -63,8 +63,16 @@ name = 'luochen1990/rainbow'
 merge = 0
 
 [[custom_plugins]]
+name = 'liquidz/lein-vim'
+merge = 0
+
+[[custom_plugins]]
 name = 'ryanoasis/vim-devicons'
 merge = 0
+
+[[custom_plugins]]
+name = 'mhartington/oceanic-next'
+merged = 0
 
 [[custom_plugins]]
 name = 'christianrondeau/vim-base64'
@@ -91,11 +99,15 @@ name = 'neoclide/coc.nvim'
 merge = 0
 
 [[custom_plugins]]
-name = 'terryma/vim-multiple-cursors'
+name = 'mg979/vim-visual-multi'
 merge = 0
 
 [[custom_plugins]]
 name = 'tpope/vim-surround'
+merge = 0
+
+[[custom_plugins]]
+name = 'satabin/hocon-vim'
 merge = 0
 
 [[custom_plugins]]
@@ -110,8 +122,12 @@ merge = 0
 name = 'vim-syntastic/syntastic'
 merged = 0
 
+[[custom_plugins]]
+name = 'solarnz/thrift.vim'
+merged = 0
+
 [[layers]]
-name = 'floobits'
+name = 'checkers'
 
 [[layers]]
 name = 'debug'
@@ -132,10 +148,7 @@ name = 'VersionControl'
 enable-gtm-status = true
 
 [[layers]]
-name = 'lang#elixir'
-
-[[layers]]
-name = 'lang#vue'
+name = 'floobits'
 
 [[layers]]
 name = 'github'
@@ -159,19 +172,13 @@ name = 'colorscheme'
 name = 'tools'
 
 [[layers]]
+name = 'tmux'
+
+[[layers]]
 name = 'lang#scala'
 
 [[layers]]
-name = 'lang#swift'
-
-[[layers]]
 name = 'lang#sh'
-
-[[layers]]
-name = 'lang#toml'
-
-[[layers]]
-name = 'tmux'
 
 [[layers]]
 name = 'lang#rust'
@@ -184,20 +191,42 @@ name = 'lang#vim'
 name = 'lang#java'
 
 [[layers]]
-name = 'lang#dart'
+name = 'lang#javascript'
+
+[[layers]]
+name = 'lang#vue'
+
+[[layers]]
+name = 'lang#clojure'
+
+[[layers]]
+name = 'lang#erlang'
+
+[[layers]]
+name = 'lang#elixir'
 
 [[layers]]
 name = 'lsp'
 filetypes = [
-    'rust',
-    'dart',
     'scala',
-    'go',
+    'rust',
     'dockerfile',
+    'python',
+    'elixir',
+    'haskell',
 ]
 
 [layers.override_cmd]
-elixir = ['~/.elixir-ls/release/language_server.sh']
+elixir = ['/Users/pmi27/.elixir-ls/release/language_server.sh']
+
+[[layers]]
+name = 'lang#swift'
+
+[[layers]]
+name = 'lang#python'
+
+[[layers]]
+name = 'lang#toml'
 
 [[layers]]
 name = 'lang#go'
@@ -222,19 +251,32 @@ name = 'checkers'
 enable = false
 
 [options]
-colorscheme = 'gruvbox'
-colorscheme_bg = 'light'
-enable_guicolors = false
+colorscheme = 'base16-harmonic-dark'
+colorscheme_bg = 'dark'
+enable_guicolors = true
 guifont = 'FuraCode Nerd Font:h14'
-statusline_separator = 'slant'
+statusline_separator = 'nil'
 statusline_inactive_separator = 'bar'
 buffer_index_type = 4
 enable_tabline_filetype_icon = true
-enable_statusline_display_mode = false
-bootstrap_before = 'myspacevim#before'
+enable_statusline_display_mode = true
 lint_on_the_fly = true
 filemanager = 'nerdtree'
 autocomplete_method = 'coc'
 filetree_direction = 'right'
 enable_cursorcolumn = true
 windows_smartclose = '§'
+statusline_left_sections = [
+    'winnr',
+    'major mode',
+    'filename',
+    'version control info',
+    'search status',
+]
+statusline_right_sections = [
+    'minor mode lighters',
+    'syntax checking',
+    'cursorpos',
+    'percentage',
+    'fileformat',
+]

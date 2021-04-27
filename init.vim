@@ -1,16 +1,16 @@
 "=============================================================================
 " init.vim --- Entry file for neovim
-" Copyright (c) 2016-2019 Wang Shidong & Contributors
-" Author: Wang Shidong < wsdjeg at 163.com >
+" Copyright (c) 2016-2020 Wang Shidong & Contributors
+" Author: Wang Shidong < wsdjeg@outlook.com >
 " URL: https://spacevim.org
 " License: GPLv3
 "=============================================================================
-
-execute 'source' fnamemodify(expand('<sfile>'), ':h').'/config/main.vim'
+execute 'source' fnamemodify(expand('<sfile>'), ':h').'/main.vim'
+let g:srcery_inverse_match_paren = 1
 let g:rainbow_active = 1
-
+let g:mix_format_on_save = 1
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_elixir_checker = 1
@@ -30,7 +30,9 @@ let g:mkdp_port = '8888'
 let g:mkdp_browser = 'firefox'
 let g:gruvbox_italic = 1
 let g:gruvbox_contrast_light = 'soft'
+let g:python3_host_prog = "/usr/local/opt/python@3.9/libexec/bin/python"
 let g:spacevim_layer_lang_java_formatter = '~/.SpaceVim/google-java-format-1.7-all-deps.jar'
+let g:neoformat_enabled_c= ['clangformat']
 let g:neoformat_enabled_java = ['googlefmt']
 let g:neoformat_enabled_scala = ['scalafmt']
 let g:neoformat_java_googlefmt = {
@@ -44,33 +46,38 @@ let g:carbon_now_sh_options =
 \ { 'ln': 'true',
   \ 'fm': 'Fira Code',
   \ 't': 'oceanic-next' }
-
-" Some of these key choices were arbitrary;
-" it's just an example.
-nnoremap <leader>fa :FlutterRun<cr>
-nnoremap <leader>fq :FlutterQuit<cr>
-nnoremap <leader>fr :FlutterHotReload<cr>
-nnoremap <leader>fR :FlutterHotRestart<cr>
-nnoremap <leader>fD :FlutterVisualDebug<cr>
 let g:github_dashboard = { 'username': $GITHUB_USER, 'password': $GITHUB_TOKEN }
 let g:github_access_token = $GITHUB_TOKEN
 let g:gitlab_api_keys = {'gitlab.com': $GITLAB_TOKEN}
+
 " Show all diagnostics
 " nnoremap <silent> <space>lca  :<C-u>CocList diagnostics<cr>
 " Find symbol of current document
-nnoremap <silent> <space>lco  :<C-u>CocList outline<cr>
+nnoremap <silent> <space>lco  :<C-u>CocList outline<CR>
 " Search workspace symbols
-nnoremap <silent> <space>lcs  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>lcs  :<C-u>CocList -I symbols<CR>
 " Do default action for next item.
 nnoremap <silent> <space>lcj  :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <silent> <space>lck  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>lcp  :<C-u>CocListResume<CR>
+nnoremap <silent> <space>k    :<Plug>(clever-f-reset)<CR>
 
+" Toggle panel with Tree Views
+nnoremap <silent> <space>lct :<C-u>CocCommand metals.tvp<CR>
+" Toggle Tree View 'metalsPackages'
+nnoremap <silent> <space>lca :<C-u>CocCommand metals.tvp metalsPackages<CR>
+" Toggle Tree View 'metalsCompile'
+nnoremap <silent> <space>lcc :<C-u>CocCommand metals.tvp metalsCompile<CR>
+" Toggle Tree View 'metalsBuild'
+nnoremap <silent> <space>lcb :<C-u>CocCommand metals.tvp metalsBuild<CR>
+" Reveal current current class (trait or object) in Tree View 'metalsPackages'
+nnoremap <silent> <space>lcf :<C-u>CocCommand metals.revealInTreeView metalsPackages<CR>
+nnoremap <silent> ge :<C-u>CocCommand metals.go-to-super-method<CR>
+" lua require('spacevim').bootstrap()
+let g:airline_theme='base16_harmonic_dark'
 let g:airline_section_c = '%t'
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -95,6 +102,3 @@ nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
 
 nnoremap <silent> <space>bd :Bdelete<CR>
-
-
-" lua require('spacevim').bootstrap()

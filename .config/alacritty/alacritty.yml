@@ -99,10 +99,10 @@ scrolling:
 
 # Font configuration (changes require restart)
 font:
-  size: 14.0
+  size: 15.0
   normal:
-    family: FuraCode Nerd Font
-    # family: Iosevka Nerd Font
+    # family: FuraCode Nerd Font
+    family: Iosevka Nerd Font
   offset:
     x: 0
     y: 0
@@ -111,70 +111,50 @@ font:
     y: 0
   use_thin_strokes: true
 
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
+
 custom_cursor_colors: true
-# Colors (Gruvbox light)
 colors:
+  # COLORSCHEME: base16-harmonic-dark-256.yml
   # Default colors
   primary:
-    background: '0x262626'
-    foreground: '0xdab997'
+    background: '0x0b1c2c'
+    foreground: '0xcbd6e2'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x262626'
-    cursor: '0xdab997'
-
-  # Normal colors
   normal:
-    black:   '0x0f1213'
-    red:     '0xd75f5f'
-    green:   '0xafaf00'
-    yellow:  '0xffaf00'
-    blue:    '0x83adad'
-    magenta: '0xd485ad'
-    cyan:    '0x85ad85'
-    white:   '0xdab997'
+    black: '0x0b1c2c'
+    red: '0xbf8b56'
+    green: '0x56bf8b'
+    yellow: '0x8bbf56'
+    blue: '0x8b56bf'
+    magenta: '0xbf568b'
+    cyan: '0x568bbf'
+    white: '0xcbd6e2'
 
   # Bright colors
   bright:
-    black:   '0x8a8a8a'
-    red:     '0xd75f5f'
-    green:   '0xafaf00'
-    yellow:  '0xffaf00'
-    blue:    '0x83adad'
-    magenta: '0xd485ad'
-    cyan:    '0x85ad85'
-    white:   '0xebdbb2'
+    black: '0x627e99'
+    red: '0xbf8b56'
+    green: '0x56bf8b'
+    yellow: '0x8bbf56'
+    blue: '0x8b56bf'
+    magenta: '0xbf568b'
+    cyan: '0x568bbf'
+    white: '0xf7f9fb'
 
+  cursor:
+    text: '0x0b1c2c'
+    cursor: '0xcbd6e2'
+
+  # Normal colors
   indexed_colors:
-    - { index: 16, color: '0xff8700' }
-    - { index: 17, color: '0xd65d0e' }
-    - { index: 18, color: '0x3a3a3a' }
-    - { index: 19, color: '0x4e4e4e' }
-    - { index: 20, color: '0x949494' }
-    - { index: 21, color: '0xd5c4a1' }
-      # Visual Bell
-#
-# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
-# rung, the terminal background will be set to white and transition back to the
-# default background color. You can control the rate of this transition by
-# setting the `duration` property (represented in milliseconds). You can also
-# configure the transition function by setting the `animation` property.
-#
-# Values for `animation`:
-#   - Ease
-#   - EaseOut
-#   - EaseOutSine
-#   - EaseOutQuad
-#   - EaseOutCubic
-#   - EaseOutQuart
-#   - EaseOutQuint
-#   - EaseOutExpo
-#   - EaseOutCirc
-#   - Linear
-#
-# Specifying a `duration` of `0` will disable the visual bell.
+    - {index: 16, color: '0xbfbf56'}
+    - {index: 17, color: '0xbf5656'}
+    - {index: 18, color: '0x223b54'}
+    - {index: 19, color: '0x405c79'}
+    - {index: 20, color: '0xaabcce'}
+    - {index: 21, color: '0xe5ebf1'}
 bell:
   animation: EaseOutExpo
   duration: 0
