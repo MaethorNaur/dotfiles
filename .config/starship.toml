@@ -6,3 +6,10 @@ disabled = true
 
 [git_commit]
 disabled = false
+
+[git_status]
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+untracked = '?[\($count\)](bold red)'
+staged = '[++\($count\)](bold green)'
