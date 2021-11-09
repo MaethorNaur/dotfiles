@@ -1,19 +1,31 @@
-[character]
-use_symbol_for_status = true
+command_timeout = 2000
 
-[battery]
+[gcloud]
 disabled = true
 
-[git_commit]
+[kubernetes]
 disabled = false
 
+[battery]
+disabled = false
+
+[git_commit]
+only_detached = false
+commit_hash_length = 7
+
 [git_status]
-ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-behind = "⇣${count}"
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
 untracked = '?${count}'
 staged = '+${count}'
 modified = '!${count}'
 renamed = '»${count}'
 conflicted = '=${count}'
 deleted = '✘${count}'
+
+[status]
+symbol = '🔴'
+disabled = false
+map_symbol = true
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
