@@ -8,7 +8,7 @@
   ],
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.errors.incompleteClasspath.severity": "info",
-  "metals.serverVersion": "0.10.0",
+  "metals.serverVersion": "0.10.9",
   "metals.statusBarEnabled": true,
   "metals.superMethodLensesEnabled": true,
   "metals.showInferredType": true,

@@ -15,31 +15,7 @@ name = 'vim-airline/vim-airline-themes'
 merged = 0
 
 [[custom_plugins]]
-name = 'gleam-lang/gleam.vim'
-merge = 0
-
-[[custom_plugins]]
-name = 'elixir-editors/vim-elixir'
-merged = 0
-
-[[custom_plugins]]
-name = 'suoto/vim-antlr'
-merged = 0
-
-[[custom_plugins]]
-name = 'venantius/vim-cljfmt'
-merged = 0
-
-[[custom_plugins]]
 name = 'tpope/vim-cucumber'
-merged = 0
-
-[[custom_plugins]]
-name = 'lepture/vim-jinja'
-merged = 0
-
-[[custom_plugins]]
-name = 'shumphrey/fugitive-gitlab.vim'
 merged = 0
 
 [[custom_plugins]]
@@ -63,16 +39,8 @@ name = 'luochen1990/rainbow'
 merge = 0
 
 [[custom_plugins]]
-name = 'liquidz/lein-vim'
-merge = 0
-
-[[custom_plugins]]
 name = 'ryanoasis/vim-devicons'
 merge = 0
-
-[[custom_plugins]]
-name = 'mhartington/oceanic-next'
-merged = 0
 
 [[custom_plugins]]
 name = 'christianrondeau/vim-base64'
@@ -148,9 +116,6 @@ name = 'VersionControl'
 enable-gtm-status = true
 
 [[layers]]
-name = 'floobits'
-
-[[layers]]
 name = 'github'
 
 [[layers]]
@@ -181,57 +146,21 @@ name = 'lang#scala'
 name = 'lang#sh'
 
 [[layers]]
-name = 'lang#rust'
-recommended-style = true
-
-[[layers]]
 name = 'lang#vim'
 
 [[layers]]
 name = 'lang#java'
 
 [[layers]]
-name = 'lang#javascript'
-
-[[layers]]
-name = 'lang#vue'
-
-[[layers]]
-name = 'lang#clojure'
-
-[[layers]]
-name = 'lang#erlang'
-
-[[layers]]
-name = 'lang#elixir'
-
-[[layers]]
 name = 'lsp'
 filetypes = [
     'scala',
-    'rust',
     'dockerfile',
-    'python',
-    'elixir',
-    'haskell',
 ]
-
-[layers.override_cmd]
-elixir = ['/Users/pmi27/.elixir-ls/release/language_server.sh']
-
-[[layers]]
-name = 'lang#swift'
-
-[[layers]]
-name = 'lang#python'
 
 [[layers]]
 name = 'lang#toml'
 
-[[layers]]
-name = 'lang#go'
-
-[[layers]]
 name = 'lang#markdown'
 
 [[layers]]
